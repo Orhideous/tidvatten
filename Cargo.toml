@@ -1,0 +1,22 @@
+[package]
+name = "tidvatten"
+description = "Server for keepers"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+authors = ["Andriy Kushnir (Orhideous) <me@orhideous.name>"]
+
+[dependencies]
+[dependencies.regex]
+version = "1"
+
+[dependencies.lazy_static]
+version = "1.4.0"
+
+[dependencies.chrono]
+version = "0.4"
+features = ["serde"]
+
+[dependencies.rocket]
+version = "0.5.0-rc.1"
+features = ["json", "msgpack"]
