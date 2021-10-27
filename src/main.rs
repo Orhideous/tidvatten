@@ -8,7 +8,7 @@ extern crate rocket;
 mod api;
 
 #[launch]
-fn run() -> _ {
+fn run() -> Rocket<Build> {
     let api_base = "/api/v1/";
     rocket::build()
         .mount(api_base, api::routes())
