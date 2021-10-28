@@ -1,2 +1,8 @@
+[global]
+remote_api_base = "http://api.rutracker.org/v1"
+
+[global.tasks]
+keepers = 3600
+
 [debug]
 log_level = "debug"
